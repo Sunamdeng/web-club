@@ -7,7 +7,7 @@
 body {
   font-size: 100%;
   color: #7f8c97;
-  background: url(../img/bg.jpg) no-repeat;
+  background: url(../img/bg1.jpg) no-repeat;
   background-size: cover;
   background-attachment: fixed;
   background-position: center;
@@ -18,124 +18,55 @@ body {
   height: 560px;
 }
 
-@font-face {
-  font-family: 'Monoton';
-  font-style: normal;
-  font-weight: 400;
-  src: local('Monoton'), local('Monoton-Regular'), url(http://themes.googleusercontent.com/static/fonts/monoton/v4/AKI-lyzyNHXByGHeOcds_w.woff) format('woff');
-}
-
-
-p {
+.start h1 {
   text-align:center;
-  font-size:7em;
+  font-size:8em;
+  font-weight: bolder;
   margin:20px 0 20px 0;
-  top: 37%;
+  top: 50%;
   position: relative;
+  line-height: 100px;
+  color: #fff;
+  letter-spacing:30px;
+  opacity: 0;
 }
 
-a {
-  text-decoration:none;
-  -webkit-transition: all 0.5s;
-  -moz-transition: all 0.5s;
-  transition: all 0.5s;
+.start p {
+  text-align:center;
+  font-size:6em;
+  font-weight: bold;
+  margin:20px 0 20px 0;
+  top: 50%;
+  position: relative;
+  color:#fff;
+  opacity: 0;
 }
 
-p:nth-child(1) a {
-  color:#FF1177;
-  font-family:Monoton;
-}
-
-p:nth-child(1) a:hover {
-  text-decoration:none;
-  -webkit-animation: neon 1.5s ease-in-out infinite alternate;
-  -moz-animation: neon 1.5s ease-in-out infinite alternate;
-  animation: neon 1.5s ease-in-out infinite alternate;
-}
-
-
-
-p a:hover {
-color:#ffffff;
-}
-
-
-@-webkit-keyframes neon {
-  from {
-    text-shadow: 0 0 10px #fff,
-               0 0 20px  #fff,
-               0 0 30px  #fff,
-               0 0 40px  #FF1177,
-               0 0 70px  #FF1177,
-               0 0 80px  #FF1177,
-               0 0 100px #FF1177,
-               0 0 150px #FF1177;
-  }
-  to {
-    text-shadow: 0 0 5px #fff,
-               0 0 10px #fff,
-               0 0 15px #fff,
-               0 0 20px #FF1177,
-               0 0 35px #FF1177,
-               0 0 40px #FF1177,
-               0 0 50px #FF1177,
-               0 0 75px #FF1177;
-  }
-}
-
-
-@-moz-keyframes neon {
-  from {
-    text-shadow: 0 0 10px #fff,
-               0 0 20px  #fff,
-               0 0 30px  #fff,
-               0 0 40px  #FF1177,
-               0 0 70px  #FF1177,
-               0 0 80px  #FF1177,
-               0 0 100px #FF1177,
-               0 0 150px #FF1177;
-  }
-  to {
-    text-shadow: 0 0 5px #fff,
-               0 0 10px #fff,
-               0 0 15px #fff,
-               0 0 20px #FF1177,
-               0 0 35px #FF1177,
-               0 0 40px #FF1177,
-               0 0 50px #FF1177,
-               0 0 75px #FF1177;
-  }
-}
-
-
-@keyframes neon {
-  from {
-    text-shadow: 0 0 10px #fff,
-               0 0 20px  #fff,
-               0 0 30px  #fff,
-               0 0 40px  #FF1177,
-               0 0 70px  #FF1177,
-               0 0 80px  #FF1177,
-               0 0 100px #FF1177,
-               0 0 150px #FF1177;
-  }
-  to {
-    text-shadow: 0 0 5px #fff,
-               0 0 10px #fff,
-               0 0 15px #fff,
-               0 0 20px #FF1177,
-               0 0 35px #FF1177,
-               0 0 40px #FF1177,
-               0 0 50px #FF1177,
-               0 0 75px #FF1177;
-  }
-}
 
 @media (max-width: 650px) {
 
-  p {
-    font-size:3.5em;
+  .start h1 {
+    text-align:center;
+    font-size:4em;
+    font-weight: bolder;
+    margin:20px 0 20px 0;
+    top: 50%;
+    position: relative;
+    line-height: 60px;
+    color: #fff;
+    letter-spacing:20px;
+    opacity: 0;
+  }
 
+  .start p {
+    text-align:center;
+    font-size:3em;
+    font-weight: bold;
+    margin:20px 0 20px 0;
+    top: 50%;
+    position: relative;
+    color:#fff;
+    opacity: 0;
   }
 
 }
@@ -278,20 +209,11 @@ color:#ffffff;
     left: 50%;
     margin-left: -30px;
   }
-  .cssanimations .cd-timeline-img.is-hidden {
-    visibility: hidden;
-  }
-  .cssanimations .cd-timeline-img.bounce-in {
-    visibility: visible;
-    -webkit-animation: cd-bounce-1 0.6s;
-    -moz-animation: cd-bounce-1 0.6s;
-    animation: cd-bounce-1 0.6s;
-  }
 }
 
 .cd-timeline-content {
   position: relative;
-  margin-left: 60px;
+  margin-left: 50px;
   background: rgb(247, 247, 247);
   border-radius: 0.25em;
   padding: 1em;
@@ -360,6 +282,7 @@ color:#ffffff;
   vertical-align: middle;
   float: right;
   }
+
 .cd-read-more:hover {
   border: 2px solid #0a3c59;
   text-shadow: #1e4158 0 1px 0;
@@ -372,6 +295,7 @@ color:#ffffff;
   background-image: -ms-linear-gradient(top, #65a9d7 0%, #3e779d 100%);
   color: #fff;
   }
+
 .cd-read-more:active {
   text-shadow: #1e4158 0 1px 0;
   border: 2px solid #0a3c59;
@@ -389,7 +313,8 @@ color:#ffffff;
 
 
 a.cd-read-more:hover{
-  text-decoration:none; background-color: #424242;
+  text-decoration:none;
+  background-color: #424242;
 }
 
 .cd-timeline-content .cd-date {
@@ -431,7 +356,7 @@ a.cd-read-more:hover{
 
 @media only screen and (min-width: 1170px) {
   .cd-timeline-content {
-    margin-left: 0;
+    margin-left:15px;
     padding: 1.6em;
     width: 45%;
     opacity: 0;
@@ -459,6 +384,7 @@ a.cd-read-more:hover{
     font-size: 16px;
   }
   .cd-timeline-block:nth-child(even) .cd-timeline-content {
+    margin-right: 15px;
     float: right;
     background:rgb(247, 247, 247);
     left: 600px;
@@ -494,6 +420,7 @@ a.cd-read-more:hover{
 
 @media only screen and (min-width: 1000px) {
   .row {
+    margin: 0;
     height: 300px;
     width: 100%;
     background-color: rgba(247, 247, 247, 0.99);
@@ -596,6 +523,7 @@ a.cd-read-more:hover{
 
 
 h4 {
+  vertical-align: middle;
   text-align:center;
   font-size:3em;
   margin:20px 0 20px 0;
@@ -619,31 +547,6 @@ h4:hover {
 
 
 @-webkit-keyframes neon2 {
-  from {
-    text-shadow: 0 0 10px #fff,
-               0 0 20px  #fff,
-               0 0 30px  #fff,
-               0 0 40px  #228DFF,
-               0 0 70px  #228DFF,
-               0 0 80px  #228DFF,
-               0 0 100px #228DFF,
-               0 0 150px #228DFF;
-  }
-  to {
-    text-shadow: 0 0 5px #fff,
-               0 0 10px #fff,
-               0 0 15px #fff,
-               0 0 20px #228DFF,
-               0 0 35px #228DFF,
-               0 0 40px #228DFF,
-               0 0 50px #228DFF,
-               0 0 75px #228DFF;
-  }
-}
-
-
-
-@-moz-keyframes neon2 {
   from {
     text-shadow: 0 0 10px #fff,
                0 0 20px  #fff,
